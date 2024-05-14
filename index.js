@@ -23,6 +23,6 @@ app.get('/', (req,res)=>{
 var httpServer = http.createServer(app);
 // var httpsServer = https.createServer(credentials, app);
 
-//httpServer.listen(8383,()=>console.log("Corriendo http 8383"));
+httpServer.listen(8383,()=>console.log("Corriendo http 8383"));
 //comentar el de arriba
-httpServer.listen(8443,()=>console.log("Corriendo HTTPS 8443"));
+// httpServer.listen(8443,()=>console.log("Corriendo HTTPS 8443"));
