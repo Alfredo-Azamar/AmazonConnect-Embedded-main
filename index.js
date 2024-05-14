@@ -20,9 +20,9 @@ app.get('/', (req,res)=>{
 })
 
 //No es necesario que tengan tanto el protocolo http y https funcionando al mismo tiempo
-var httpServer = http.createServer(app);
-// var httpsServer = https.createServer(credentials, app);
+// var httpServer = http.createServer(app);
+var httpsServer = https.createServer(credentials, app);
 
-httpServer.listen(8383,()=>console.log("Corriendo http 8383"));
+// httpServer.listen(8383,()=>console.log("Corriendo http 8383"));
 //comentar el de arriba
-// httpServer.listen(8443,()=>console.log("Corriendo HTTPS 8443"));
+httpsServer.listen(8443,()=>console.log("Corriendo HTTPS 8443"));
